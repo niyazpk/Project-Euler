@@ -24,6 +24,6 @@ for i in (3,5):
 
 i = 15
 n = int(999/i)
-sum -= n/2 * (2 * i + (n-1) * i)
+sum -= n/2 * (2 * i + (n-1) * i) #This was added twice in the for loop.
 
 print(int(sum))
