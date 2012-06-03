@@ -8,13 +8,12 @@
 s = 0
 for i in range(100, 1000):
     for j in range(100, 1000):
-        x = str(i * j)
-        l = len(x) / 2
-        if x[:l] == x[l:][::-1] and x > s:
+        x = i * j
+        if str(x) == str(x)[::-1] and x > s:
             s = x
+            c = [i, j]
 
-print s
+print s, c
 
-# elegant solution?
-
+# faster solution?
 
