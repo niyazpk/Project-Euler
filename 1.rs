@@ -22,7 +22,7 @@ fn simple(n: int) -> int {
 
 // Solution using arithmetic progression equations
 
-fn sum(n: int) -> int{
+fn sum(n: int) -> int {
    n * (n + 1) / 2
 }
 
