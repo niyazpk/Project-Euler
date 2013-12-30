@@ -8,16 +8,13 @@
 // Simple solution
 fn simple(n: int) -> int {
    
-   let mut   i = 0;
-   let mut sum = 0;
+    let mut sum = 0;
 
-   while i < n {
-
-       if i % 3 == 0 || i % 5 == 0 {
-          sum += i;
-       }
-       i += 1;
-   }
+    for i in range(0, n) {
+        if i % 3 == 0 || i % 5 == 0 {
+            sum += i;
+        }
+    }
 
    sum
 }
@@ -48,5 +45,9 @@ fn main() {
    let n = 1000;
    println!("{} => {}", n, simple(n));
    println!("{} => {}", n, arithmetic_progression(n));
+
+   for i in range(0, 5) {
+     print!("{} ", i) // prints "0 1 2 3 4"
+   }
 }
 
