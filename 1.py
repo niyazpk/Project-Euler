@@ -19,7 +19,7 @@ print (sum)
 sum = 0
 
 for i in (3, 5):
-    n = int(1000 / i)
+    n = int(999 / i)
     x = n * (n + 1) * i / 2
     sum += x
 
