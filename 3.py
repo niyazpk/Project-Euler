@@ -20,12 +20,10 @@ x = int(math.sqrt(n))
 primeList = []
 
 for i in range (3, x, 2):
-    if isPrime(i):
+    if isPrime(i) and (n % i == 0):
        primeList.append(i)
-
-print("primeList created")
+       if isPrime( n / i ):
+          primeList.append( n / i )
 
 for i in primeList:
-    if n % i == 0:
-        print(i)
-print("done")
+    print(i)
